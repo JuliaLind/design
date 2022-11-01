@@ -1,11 +1,12 @@
 ---
 Title: Home
-Description: This is our index page.
+Description: This is my index page.
 ---
 
 Home page
 ==========================
 
-The source for this page is in `content/index.md`.
-
-This is a sample home page written in markdown with some frontmatter defined.
+Hej!  
+Mitt namn är Julia, jag är 33 år och bor i Stockholm.  
+Jag arbetar som Comp & Ben specialist på Schibsted. På fritiden studerar jag Webbprogrammering på distans samt tränar på gym, och mer än så räcker inte tiden till 😅.  
+![me](image/coffee.jpg)
