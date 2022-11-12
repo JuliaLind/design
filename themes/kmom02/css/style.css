@@ -6551,7 +6551,7 @@ dd {
 }
 .footer a,
 .footer p {
-  color: rgb(255, 255, 255);
+  color: #fAf9f6;
 }
 .footer a:hover {
   color: #b2976a;
@@ -6633,7 +6633,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
+  background-color: #fAf9f6;
   min-height: 100vh;
   height: 100%;
 }
@@ -6794,7 +6794,7 @@ img {
     top: 0;
     right: 0;
     width: 100%;
-    background-color: rgba(255, 253, 253, 0.935);
+    background-color: #fAf9f6;
     height: 3rem;
   }
   .site-header {
@@ -6894,7 +6894,7 @@ pre code {
     padding-bottom: 1em;
     justify-content: space-around;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #fAf9f6;
     position: fixed;
     right: 0;
     top: 0;
