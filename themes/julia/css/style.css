@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     border: 0 none;
@@ -81,10 +82,11 @@ body {
 
 .footer a {
     color: #a3e8dc;
+    text-decoration: none;
 }
 
 .footer .social {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* Typografy */
