@@ -1,0 +1,26 @@
+@mixin title {
+    font-family: $title-font;
+    color: $title-color;
+    margin-bottom: $magic-number;
+}
+
+@mixin subtitle {
+    @include title;
+    margin-top: $magic-number * 2;
+    @media (max-width: 767px) {
+        margin-top: $magic-number * $scale-factor-small;
+        // margin-bottom: $magic-number * 0.5;
+        line-height: $magic-number * 0.75;
+    }
+}
+
+@mixin link {
+    font-family: $main-font;
+    color: $font-color;
+    
+    a {
+        text-decoration: none;
+        color: $font-color;
+    }
+}
+

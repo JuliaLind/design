@@ -1,0 +1,21 @@
+$title-color: #444;
+$font-color: #333;
+$font-alternative-color: #7197e0;
+$accent-color: #b2976a;
+$background-color: rgb(255, 255, 255);
+$nav-background: rgba(255, 253, 253, 0.935);
+$background-alternative-color: rgb(211, 211, 211);
+
+$main-font: 'Montserrat', sans-serif;
+$title-font: 'Playfair Display', serif;
+
+// $title-font: 'Julius Sans One', sans-serif;
+$site-header-font: 'Playfair Display SC', serif;
+
+
+$base-line-height: 1.5;
+$base-font-size: 1rem;
+$magic-number: $base-line-height * $base-font-size;
+$scale-factor: 1.414;
+$scale-factor-small: 1.333;
+$golden-ratio: 1.62;

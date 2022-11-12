@@ -1,0 +1,268 @@
+
+
+/* Placement */
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.header,
+.site-header {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.header {
+    flex: 0 0 auto;
+}
+
+.site-header {
+    background-color: $font-color;
+}
+
+.logo img {
+    border-radius: 10% 20%;
+}
+
+
+.main {
+    flex: 1 0 auto;
+    margin: 1.25vh auto;
+
+    img {
+        float: right;
+        width: 30%;
+        height: auto;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+    }
+
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $font-color;
+    height: 4rem;
+    padding: 0.5rem;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 767px) {
+    .header,
+    .site-header {
+        height: 100vh;
+    }
+
+    @keyframes MoveDown {
+        0% {
+            bottom: 4.5rem;
+        }
+
+        100% {
+            bottom: 1.5rem;
+        }
+    }
+
+    .scroll-to.hidden {
+        display: unset !important;
+        position: absolute;
+        align-self: center;
+        bottom: 0;
+        color: $accent-color;
+        text-align: center;
+        width: 100%;
+    }
+
+    .scroll-to .fa-chevron-down {
+        position: absolute;
+        display: block;
+        width: 100%;
+        animation: MoveDown 1.5s linear infinite;
+        animation-direction: normal;
+    }
+
+    .main {
+        min-height: 80vh;
+
+        img {
+            display: block;
+            float: unset;
+            width: 80%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .footer {
+        height: 20vh;
+    }
+
+    .site-header {
+        width: 100%;
+        background-color: $font-color;
+        flex-direction: column;
+
+        .logo {
+            height: auto;
+    
+            img {
+                height: auto;
+                width: auto;
+                border-radius: 30% 10%;
+            }
+        }
+    
+        .title {
+            width: 100%;
+        }
+
+    }
+}
+
+@media(max-width: 767px) and (min-width: 401px) {
+    // .scroll-to {
+    //     left: 0 !important;
+    //     margin-left: 3rem;
+    // }
+
+    .site-header {
+        flex-direction: row;
+
+        .logo {
+            padding: 1em;
+            width: 30%;
+            text-align: left;
+            // margin-left: 6rem;
+            // margin-top: 2rem;
+        }
+
+        .title {
+            padding: 7em 4em 0 0;
+            width: 70%;
+            
+            h1,
+            p {
+                text-align: right;
+            }
+
+            h1 {
+                font-size: 4.5rem;
+                margin-bottom: 3rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .site-header {
+        flex-direction: column;
+
+        .logo {
+            width: 100%;
+            margin-top: 15vh;
+            text-align: center;
+        }
+    
+        .title {
+            h1,
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+
+
+    .footer {
+        height: 11vh;
+    }
+
+    .main {
+        min-height: 89vh;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: $nav-background;
+        height: 3rem;
+    }
+
+    .site-header {
+        margin-top: 3rem;
+        width: 100%;
+        justify-content: left;
+        background-color: $font-color;
+
+        .logo {
+            padding: 1em;
+        
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+
+    }
+
+}
+
+
+@media (min-width: 1600px) {
+    .site-header {
+        padding-left: $magic-number;
+
+        .logo {
+            padding: 2em 1em;
+        }
+    }
+    
+    .main {
+        img {
+            width: 300px;
+            height: auto;
+            margin-left: 2vw;
+        }
+    }
+}
