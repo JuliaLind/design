@@ -52,7 +52,7 @@ body {
 
     img {
         float: right;
-        width: 30%;
+        width: 33%;
         height: auto;
         margin-left: 5vw;
         margin-bottom: 5vh;
@@ -60,6 +60,11 @@ body {
 
 }
 
+
+.active {
+    text-decoration: overline $font-alternative-color;
+    text-decoration-thickness: 2px;
+}
 
 img {
     max-width: 100%;
@@ -260,9 +265,11 @@ img {
     
     .main {
         img {
-            width: 300px;
+            float: left;
+            width: 50%;
             height: auto;
-            margin-left: 2vw;
+            margin-left: 0;
+            margin-right: 2vw;
         }
     }
 }

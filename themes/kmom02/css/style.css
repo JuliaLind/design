@@ -3,6 +3,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display&family=Playfair+Display+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 .fa,
 .fas,
 .far,
@@ -6661,10 +6662,15 @@ body {
 }
 .main img {
   float: right;
-  width: 30%;
+  width: 33%;
   height: auto;
   margin-left: 5vw;
   margin-bottom: 5vh;
+}
+
+.active {
+  text-decoration: overline #7197e0;
+  text-decoration-thickness: 2px;
 }
 
 img {
@@ -6819,9 +6825,11 @@ img {
     padding: 2em 1em;
   }
   .main img {
-    width: 300px;
+    float: left;
+    width: 50%;
     height: auto;
-    margin-left: 2vw;
+    margin-left: 0;
+    margin-right: 2vw;
   }
 }
 blockquote {
@@ -6930,5 +6938,234 @@ pre code {
     right: 0;
     top: 0;
     z-index: 1;
+  }
+}
+.tech-container {
+  display: grid;
+  gap: 1rem 1rem;
+  margin: 0 auto;
+  max-width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 14rem repeat(5, 10rem);
+  align-items: center;
+}
+.tech-container a {
+  text-decoration: none;
+}
+.tech-container h1 {
+  margin-top: 0;
+  font-weight: 600;
+  border-bottom: none !important;
+}
+.tech-container h2 {
+  font-size: 6rem;
+  margin: 0;
+  padding: 0 1rem;
+}
+.tech-container .technologies h1::after {
+  border-bottom: none;
+}
+
+.tech-box {
+  text-align: center;
+  padding: 0;
+  justify-self: center;
+  background-color: rgb(211, 211, 211);
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.tech-box:hover {
+  opacity: 1;
+}
+
+.CSS h2,
+.Python h2,
+.SQLite h2 {
+  color: #7197e0;
+}
+
+.technologies {
+  grid-column: 1/span 3;
+  grid-row: 1/span 1;
+  letter-spacing: 2rem;
+  background-color: #7197e0 !important;
+  opacity: 1 !important;
+}
+.technologies h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.JavaScript {
+  grid-column: 1/span 3;
+  grid-row: 5/span 1;
+  letter-spacing: 1rem;
+}
+
+.Git {
+  grid-column: 1/span 1;
+  grid-row: 3/span 2;
+}
+.Git h2 {
+  font-size: 12rem;
+}
+
+.SQLite {
+  grid-column: 1/span 2;
+  grid-row: 6/span 1;
+  letter-spacing: 1rem;
+}
+.SQLite h2 {
+  font-size: 6rem;
+}
+
+.PHP {
+  grid-column: 3/span 1;
+  grid-row: 6/span 1;
+  letter-spacing: 1rem;
+}
+
+.Python {
+  grid-column: 2/span 2;
+  grid-row: 4/span 1;
+  letter-spacing: 1rem;
+}
+
+.HTML {
+  grid-column: 2/span 2;
+  grid-row: 2/span 2;
+}
+.HTML h2 {
+  font-size: 12rem;
+}
+
+.CSS {
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+.CSS h2 {
+  font-size: 6rem;
+}
+
+@media (hover: none) {
+  .tech-box:focus {
+    opacity: 1;
+  }
+}
+@media (max-width: 1200px) {
+  .tech-container {
+    grid-template-rows: 6rem repeat(5, 6rem);
+  }
+  .technologies h1 {
+    font-size: 3rem;
+    letter-spacing: 0.25;
+  }
+  .CSS h2 {
+    font-size: 4rem;
+  }
+  .HTML h2 {
+    font-size: 8rem;
+  }
+  .Git h2 {
+    font-size: 8rem;
+  }
+  .SQLite h2 {
+    font-size: 4rem;
+  }
+  .JavaScript h2 {
+    font-size: 4rem;
+  }
+  .Python h2 {
+    font-size: 4rem;
+  }
+  .PHP h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .tech-container {
+    all: unset;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .tech-container h1,
+  .tech-container h2 {
+    all: unset;
+    font-size: 3rem !important;
+    letter-spacing: normal;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+  }
+  .tech-container h1 {
+    font-weight: bold;
+  }
+  .technologies {
+    order: 1;
+  }
+  .JavaScript {
+    order: 2;
+  }
+  .Python {
+    order: 3;
+  }
+  .SQLite {
+    order: 4;
+  }
+  .HTML {
+    order: 5;
+  }
+  .PHP {
+    order: 6;
+  }
+  .CSS {
+    order: 7;
+  }
+  .Git {
+    order: 8;
+  }
+  .tech-box {
+    height: 5rem;
+    margin: 0.1rem;
+  }
+  .tech-box a {
+    display: block;
+    width: 100%;
+  }
+  .technologies {
+    background: #333 !important;
+  }
+  .technologies h1 {
+    color: #b2976a !important;
+  }
+}
+@media (min-width: 1600px) {
+  .technologies h1 {
+    font-size: 8rem;
+  }
+  .CSS h2 {
+    font-size: 6rem;
+  }
+  .HTML h2 {
+    font-size: 14rem;
+  }
+  .Git h2 {
+    font-size: 12rem;
+  }
+  .SQLite h2 {
+    font-size: 6rem;
+  }
+  .JavaScript h2 {
+    font-size: 6rem;
+  }
+  .Python h2 {
+    font-size: 6rem;
+  }
+  .PHP h2 {
+    font-size: 6rem;
   }
 }
