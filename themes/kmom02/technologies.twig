@@ -8,7 +8,7 @@
         <div class = "tech-box technologies"> {{ content }} </div>
 
         {% for page in pages("technology") %}    
-            <div class="tech-box {{ page.title }}">
+            <div class="tech-box {{ page.title|lower }}">
                 <a href = "{{ page.url }}">
                 <h2>{{ page.title }}</h2>
                 </a>
