@@ -1,6 +1,7 @@
 ---
 Title: SQLite
 Description: About SQLite
+Template: technology
 ---
 
 # SQLite

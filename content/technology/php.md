@@ -1,6 +1,7 @@
 ---
 Title: PHP
 Description: About PHP
+Template: technology
 ---
 
 # PHP

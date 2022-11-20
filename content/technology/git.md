@@ -1,6 +1,7 @@
 ---
 Title: Git
 Description: About Git
+Template: technology
 ---
 
 # Git
