@@ -66,6 +66,7 @@ body {
     text-decoration-thickness: 2px;
 }
 
+
 img {
     max-width: 100%;
 }
@@ -81,6 +82,10 @@ img {
 }
 
 @media (max-width: 767px) {
+    .active {
+        text-decoration: underline $accent-color;
+    }
+
     .header,
     .site-header {
         height: 100vh;

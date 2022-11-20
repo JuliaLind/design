@@ -1,53 +1,62 @@
 .tech-container {
     display: grid;
-    gap: 1rem 1rem;
-    // width: 80rem;
+    padding-top: 1rem;
+    gap: 1rem;
     margin: 0 auto;
     max-width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
-    grid-template-rows: 14rem repeat(5, 10rem);
-    align-items: center;
+    grid-template-rows: 10rem repeat(5, 10rem);
 
     a {
         text-decoration: none;
-        // display: block;
     }
 
     h1 {
-        margin-top: 0;
+        padding: unset;
+        margin: unset;
         font-weight: 600;
-        border-bottom: none !important;
-        // color: $background-color;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 6rem;
+        font-weight: bold;
+        letter-spacing: 2rem;
+        margin-right: -1rem;
+        margin-left: 1rem;
     }
-
+    
     h2 {
         font-size: 6rem;
         margin: 0;
         padding: 0 1rem;
+        width: 100%;
+        height: 100%;
+        margin-bottom: unset;
     }
+
     .technologies h1::after {
-        border-bottom: none;
+        border-bottom: unset;
     }
 }
 
 .tech-box {
-    text-align: center;
     padding: 0;
-    justify-self: center;
     background-color: $background-alternative-color;
     width: 100%;
     height: 100%;
     opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech-box:hover {
     opacity: 1;
 }
 
-.CSS h2,
-.Python h2,
-.SQLite h2 {
+.css h2,
+.python h2,
+.sqlite h2 {
     color: $font-alternative-color;
 }
 
@@ -56,54 +65,56 @@
 .technologies {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
-    letter-spacing: 2rem;
     background-color: $font-alternative-color !important;
-    h1 {
-        font-size: 6rem;
-        font-weight: bold;
-    }
     opacity: 1 !important;
 }
 
-.JavaScript {
+.javascript {
     grid-column: 1 / span 3;
     grid-row: 5 / span 1;
     letter-spacing: 1rem;
+    margin-right: -1rem;
 }
 
-.Git {
+.git {
     grid-column: 1 / span 1;
-    grid-row : 3 / span 2;
+    grid-row: 3 / span 2;
+
     h2 {
         font-size: 12rem;
     }
 }
 
-.SQLite {
+.sqlite {
     grid-column: 1 / span 2;
-    grid-row : 6 / span 1;
+    grid-row: 6 / span 1;
     letter-spacing: 1rem;
+    margin-right: -1rem;
+
     h2 {
         font-size: 6rem;
     }
 }
 
-.PHP {
+.php {
     grid-column: 3 / span 1;
     grid-row: 6 / span 1;
     letter-spacing: 1rem;
+    margin-right: -1rem;
 }
 
-.Python {
+.python {
     grid-column: 2 / span 2;
     grid-row: 4 / span 1;
     letter-spacing: 1rem;
+    margin-right: -1rem;
 }
 
 
-.HTML {
+.html {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
+
     h2 {
         font-size: 12rem;
     }
@@ -111,7 +122,7 @@
 
 
 
-.CSS {
+.css {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     
@@ -127,56 +138,62 @@
     }
 }
 
-@media (max-width: 1200px) {
-
+@media (max-width: 1350px) {
     .tech-container {
-        grid-template-rows: 6rem repeat(5, 6rem);
-    }
+        grid-template-rows: 9rem repeat(5, 6rem);
 
-    .technologies {
         h1 {
-            font-size: 3rem;
-            letter-spacing: 0.25;
+            font-size: 6rem;
+            letter-spacing: 0;
+            margin: 0;
         }
     }
 
-    .CSS {
+    .tech-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .css {
         h2 {
             font-size: 4rem;
         }
     }
 
-    .HTML {
+    .html {
+        h2 {
+            font-size: 6rem;
+        }
+    }
+
+    .git {
         h2 {
             font-size: 8rem;
         }
     }
 
-    .Git {
-        h2 {
-            font-size: 8rem;
-        }
-    }
-
-    .SQLite {
+    .sqlite {
         h2 {
             font-size: 4rem;
         }
     }
 
-    .JavaScript {
+    .javascript {
         h2 {
             font-size: 4rem;
         }
     }
 
-    .Python {
+    .python {
         h2 {
             font-size: 4rem;
         }
     }
 
-    .PHP {
+    .php {
         h2 {
             font-size: 4rem;
         }
@@ -185,139 +202,193 @@
 
 @media (max-width: 767px) {
     .tech-container {
-        all: unset;
+        height: 100vh;
         width: 100vw;
-        padding: 0;
-        margin: 0;
+        max-width: 100%;
+        margin: unset;
+        padding: unset;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 0.1rem;
 
         h1,
         h2 {
             all: unset;
-            font-size: 3rem !important;
             letter-spacing: normal;
             font-family: $main-font;
             color: $font-color;
+            font-size: 3rem;
         }
 
         h1 {
-            font-weight: bold;
+            font-weight: 600;
         }
-        // grid-template-columns: 1fr !important;
-        display: flex;
-        flex-direction: column;
+
+        .technologies,
+        .javascript,
+        .python,
+        .sqlite,
+        .html,
+        .php,
+        .css,
+        .git {
+            grid-column: unset;
+            grid-row: unset;
+            letter-spacing: unset;
+            margin-right: unset;
+        }
+
+
+        .tech-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        .technologies {
+            background: $font-color !important;
+
+            h1 {
+                color: $accent-color;
+            }
+        }
     }
 
-    .technologies {
-        order: 1;
-    }
+    // .tech-container {
+    //     all: unset;
+    //     width: 100vw;
+    //     padding: 0;
+    //     margin: 0;
+    //     display: flex;
+    //     flex-direction: column;
 
-    .JavaScript {
-        order: 2;
-    }
+    //     h1,
+    //     h2 {
+    //         all: unset;
+    //         letter-spacing: normal;
+    //         font-family: $main-font;
+    //         color: $font-color;
+    //         font-size: 3rem;
+    //     }
 
-    .Python {
-        order: 3;
-    }
+    //     h1 {
+    //         font-weight: 600;
 
-    .SQLite {
-        order: 4;
-    }
+    //     }
 
-    .HTML {
-        order: 5;
-    }
-
-    .PHP {
-        order: 6;
-    }
-
-    .CSS {
-        order: 7;
-    }
-
-    .Git {
-        order: 8;
-    }
-
-    // .technologies,
-    // .CSS,
-    // .HTML,
-    // .Git,
-    // .SQLite,
-    // .JavaScript,
-    // .Python,
-    // .PHP {
-    //     grid-column: 1 / span 1;
-    //     display: block;
-    //     height: 6rem;
     // }
 
-    // .CSS {
-    //     background-color: red !important;
-    //     display: inline-block;
+    // .technologies {
+    //     order: 1;
     // }
 
-    .tech-box {
-        height: 5rem;
-        margin: 0.1rem;
-        a {
-            display: block;
-            width: 100%;
-        }
-    }
+    // .javascript {
+    //     order: 2;
+    // }
 
-    .technologies {
-        background: $font-color !important;
-        h1 {
-            color: $accent-color !important;
-        }
-    }
+    // .python {
+    //     order: 3;
+    // }
+
+    // .sqlite {
+    //     order: 4;
+    // }
+
+    // .html {
+    //     order: 5;
+    // }
+
+    // .php {
+    //     order: 6;
+    // }
+
+    // .css {
+    //     order: 7;
+    // }
+
+    // .git {
+    //     order: 8;
+    // }
+
+
+    // .tech-box {
+    //     height: 5rem;
+    //     margin-top: 0.1rem;
+    //     margin-top: 0.1rem;
+
+    //     a {
+    //         display: block;
+    //         width: 100%;
+    //     }
+
+    //     h2 {
+    //         align-self: center;
+    //     }
+    // }
+
+    // .technologies {
+    //     background: $font-color !important;
+
+    //     h1 {
+    //         color: $accent-color;
+    //     }
+    // }
 }
 
 @media (min-width: 1600px) {
+    .tech-container {
+        grid-template-rows: 14rem repeat(5, 10rem);
+    }
+
     .technologies {
         h1 {
             font-size: 8rem;
         }
     }
 
-    .CSS {
+    .css {
         h2 {
             font-size: 6rem;
         }
     }
 
-    .HTML {
+    .html {
         h2 {
             font-size: 14rem;
         }
     }
 
-    .Git {
+    .git {
         h2 {
             font-size: 12rem;
         }
     }
 
-    .SQLite {
+    .sqlite {
         h2 {
             font-size: 6rem;
         }
     }
 
-    .JavaScript {
+    .javascript {
         h2 {
             font-size: 6rem;
         }
     }
 
-    .Python {
+    .python {
         h2 {
             font-size: 6rem;
         }
     }
 
-    .PHP {
+    .php {
         h2 {
             font-size: 6rem;
         }
