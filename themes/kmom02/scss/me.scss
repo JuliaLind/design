@@ -125,6 +125,14 @@
 }
 
 @media (max-width: 950px) {
+    .image1 {
+        img {
+            left: 0;
+            bottom: -400%;
+
+        }
+    }
+
     .image3,
     .dislikes {
         grid-column: 1 / span 2;
@@ -135,6 +143,30 @@
             word-wrap: unset;
             margin-right: unset;
             margin-left: unset;
+        }
+
+        img {
+            bottom: -270%;
+            left: 0;
+        }
+    }
+
+    .image2,
+    .likes {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+
+        h2 {
+            display: block;
+            word-wrap: unset;
+            margin-right: unset;
+            margin-left: unset;
+        }
+
+        img {
+            left: unset;
+            bottom: -400%;
+            right: -30%;
         }
     }
 }
@@ -148,6 +180,7 @@
         margin-top: 0;
         margin-bottom: 0;
         max-width: 100%;
+        
 
         h2 {
             margin-left: unset;

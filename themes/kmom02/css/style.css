@@ -6635,13 +6635,15 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #faf9f6;
-  min-height: 100vh;
-  height: 100%;
+  min-height: 100%;
+  justify-content: flex-start;
+  height: 100vh;
 }
 
 .header,
 .site-header {
   display: flex;
+  position: relative;
 }
 
 .header {
@@ -6681,7 +6683,6 @@ img {
   display: flex;
   justify-content: space-between;
   background-color: #333;
-  height: 4rem;
   padding: 0.5rem;
   flex: 0 0 auto;
 }
@@ -6706,10 +6707,10 @@ img {
     display: unset !important;
     position: absolute;
     align-self: center;
-    bottom: 0;
     color: #b2976a;
     text-align: center;
     width: 100%;
+    bottom: 0;
   }
   .scroll-to .fa-chevron-down {
     position: absolute;
@@ -6728,9 +6729,6 @@ img {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-  }
-  .footer {
-    height: 20vh;
   }
   .site-header {
     width: 100%;
@@ -7110,7 +7108,7 @@ pre code {
 }
 @media (max-width: 767px) {
   .tech-container {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     max-width: 100%;
     margin: unset;
@@ -7360,6 +7358,10 @@ pre code {
 }
 
 @media (max-width: 950px) {
+  .image1 img {
+    left: 0;
+    bottom: -400%;
+  }
   .image3,
   .dislikes {
     grid-column: 1/span 2;
@@ -7371,6 +7373,29 @@ pre code {
     word-wrap: unset;
     margin-right: unset;
     margin-left: unset;
+  }
+  .image3 img,
+  .dislikes img {
+    bottom: -270%;
+    left: 0;
+  }
+  .image2,
+  .likes {
+    grid-column: 2/span 2;
+    grid-row: 2/span 1;
+  }
+  .image2 h2,
+  .likes h2 {
+    display: block;
+    word-wrap: unset;
+    margin-right: unset;
+    margin-left: unset;
+  }
+  .image2 img,
+  .likes img {
+    left: unset;
+    bottom: -400%;
+    right: -30%;
   }
 }
 @media (max-width: 767px) {
