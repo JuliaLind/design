@@ -3,7 +3,7 @@
 <body>
     {% include 'incl/nav.twig' %}
 
-    <div class="main" role="main" id="main">
+    <div class="main {{ meta.title|lower|replace({' ': '-'}) }}" role="main" id="main">
         {{ content }}
     </div>
     

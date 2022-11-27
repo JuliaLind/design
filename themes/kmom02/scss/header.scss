@@ -1,0 +1,218 @@
+.header,
+.site-header {
+    display: flex;
+    position: relative;
+}
+
+.header {
+    flex: 0 0 auto;
+}
+
+.header {
+    @include link;
+
+    .nav {
+        text-transform: uppercase;
+    }
+
+    .nav a:hover {
+        color: $nav-a-hover-color;
+    }
+}
+
+.active {
+    text-decoration: overline $right-light;
+    text-decoration-thickness: 2px;
+}
+
+.site-header {
+    width: 100%;
+    background-color: $header-background-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        margin-right: 3vw;
+    }
+
+    .title {
+        margin-right: 2.5vw;
+        line-height: $base-line-height * 0.5;
+        padding: 2em 1em 1em;
+    }
+
+    h1 {
+        font-family: $site-header-font;
+        margin-top: 0;
+        text-shadow: $text-shadow;
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    a,
+    h1,
+    p {
+        color: $main;
+    }
+}
+
+.logo img {
+    transform: rotate(-10deg);
+    box-shadow: $shadow-right;
+    border-radius: 1%;
+    filter: $logo-filter;
+}
+
+@media (max-width: 767px) {
+    .active {
+        text-decoration: underline $main;
+    }
+
+    .header,
+    .site-header {
+        height: 100vh;
+    }
+
+    @keyframes MoveDown {
+        0% {
+            bottom: 8rem;
+        }
+
+        100% {
+            bottom: 2rem;
+        }
+    }
+
+    
+    .site-header {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70vh auto;
+        gap: 0;
+        overflow: hidden;
+
+        .logo {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 2;
+            overflow: hidden;
+            margin: unset;
+            padding: unset;
+
+            img {
+                width: 100%;
+                transform: unset;
+                margin: unset;
+                padding: unset;
+                filter: blur(5px) brightness(70%);
+                z-index: -1;
+            }
+        }
+
+        .title {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            z-index: 1;
+
+            h1 {
+                font-size: 15vw;
+                line-height: $base-line-height;
+            }
+
+            p {
+                font-size: 8vw;
+            }
+        }
+
+        .scroll-to {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+            padding-top: 3vh;
+        }
+
+        .scroll-to.hidden {
+            display: flex !important;
+            position: relative;
+            color: $main;
+            width: 100%;
+        }
+    
+        .scroll-to .fa-chevron-down {
+            position: absolute;
+            display: block;
+            width: 100%;
+            animation: MoveDown 1.5s linear infinite;
+            animation-direction: normal;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        height: 100vh;
+        width: auto;
+        overflow: hidden;
+        margin: unset;
+    }
+
+    .site-header {
+        .scroll-to {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: $background-color;
+        height: 3rem;
+    }
+
+    .header {
+        box-shadow: $shadow-down;
+    }
+
+    .site-header {
+        margin-top: 3rem;
+
+        h1 {
+            font-size: 10rem;
+        }
+
+        p {
+            font-size: calc(10rem / ($scale-factor * 2.5));
+            margin-top: $magic-number * 2;
+            text-align: right;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .site-header {
+        padding-left: $magic-number;
+
+        .logo {
+            padding: 2em 1em;
+        }
+    }
+}

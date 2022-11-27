@@ -3,39 +3,33 @@
     padding-top: 1rem;
     gap: 1rem;
     margin: 0 auto;
-    max-width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10rem repeat(5, 10rem);
 
     a {
         text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     h1 {
         padding: unset;
         margin: unset;
         font-weight: 600;
-        width: 100%;
-        height: 100%;
+
         text-align: center;
         font-size: 6rem;
         font-weight: bold;
-        letter-spacing: 2rem;
-        margin-right: -1rem;
-        margin-left: 1rem;
     }
     
     h2 {
         font-size: 6rem;
         margin: 0;
         padding: 0 1rem;
-        width: 100%;
-        height: 100%;
         margin-bottom: unset;
-    }
-
-    .technologies h1::after {
-        border-bottom: unset;
     }
 }
 
@@ -48,16 +42,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: $shadow-around;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
 }
 
 .tech-box:hover {
     opacity: 1;
 }
 
-.css h2,
-.python h2,
-.sqlite h2 {
-    color: $font-alternative-color;
+.css,
+.python,
+.sqlite {
+    background-color: $left-light;
+
+    h2 {
+        color: $right-dark;
+    }
+}
+
+.html,
+.git,
+.php,
+.javascript {
+    background-color: $right-light;
+
+    h2 {
+        color: $background-color;;
+    }
 }
 
 
@@ -65,8 +85,12 @@
 .technologies {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
-    background-color: $font-alternative-color !important;
+    background-color: $right-light;
     opacity: 1 !important;
+
+    h1 {
+        color: $background-color;
+    }
 }
 
 .javascript {
@@ -201,27 +225,45 @@
 }
 
 @media (max-width: 767px) {
-    .tech-container {
-        height: auto;
+    .main.tech-container {
         width: 100vw;
-        max-width: 100%;
         margin: unset;
         padding: unset;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, 1fr);
-        gap: 0.1rem;
+        padding-bottom: 3rem;
+        min-height: 90vh;
+    }
 
+    .tech-container {
+        grid-template-rows: 5rem repeat(7, 2rem);
+        grid-template-columns: 1fr;
+        gap: 2em;
+
+        .javascript,
+        .python,
+        .sqlite,
+        .html,
+        .php,
+        .css,
+        .git {
+            box-shadow: $shadow-around;
+            border: $mobile-tech-border;
+        }
+    
         h1,
         h2 {
-            all: unset;
-            letter-spacing: normal;
-            font-family: $main-font;
             color: $font-color;
-            font-size: 3rem;
+            margin: unset;
+            line-height: unset;
+            font-weight: unset;
         }
 
         h1 {
-            font-weight: 600;
+            font-size: 400%;
+        }
+
+        h2 {
+            font-size: 125%;
+            text-transform: uppercase;
         }
 
         .technologies,
@@ -236,6 +278,13 @@
             grid-row: unset;
             letter-spacing: unset;
             margin-right: unset;
+            opacity: unset;
+            border-radius: 15px;
+            background-color: $mobile-tech-background-color;
+
+            h2 {
+                color: $mobile-tech-font-color;
+            }
         }
 
 
@@ -243,102 +292,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
-            a {
-                display: block;
-                text-align: center;
-                width: 100%;
-            }
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .technologies {
-            background: $font-color !important;
+            background: $background-color !important;
+            box-shadow: unset;
+            padding: 1em;
+            margin-bottom: 1.5rem;
 
             h1 {
-                color: $accent-color;
+                color: $mobile-tech-title-color;
             }
         }
     }
+}
 
-    // .tech-container {
-    //     all: unset;
-    //     width: 100vw;
-    //     padding: 0;
-    //     margin: 0;
-    //     display: flex;
-    //     flex-direction: column;
-
-    //     h1,
-    //     h2 {
-    //         all: unset;
-    //         letter-spacing: normal;
-    //         font-family: $main-font;
-    //         color: $font-color;
-    //         font-size: 3rem;
-    //     }
-
-    //     h1 {
-    //         font-weight: 600;
-
-    //     }
-
-    // }
-
-    // .technologies {
-    //     order: 1;
-    // }
-
-    // .javascript {
-    //     order: 2;
-    // }
-
-    // .python {
-    //     order: 3;
-    // }
-
-    // .sqlite {
-    //     order: 4;
-    // }
-
-    // .html {
-    //     order: 5;
-    // }
-
-    // .php {
-    //     order: 6;
-    // }
-
-    // .css {
-    //     order: 7;
-    // }
-
-    // .git {
-    //     order: 8;
-    // }
-
-
-    // .tech-box {
-    //     height: 5rem;
-    //     margin-top: 0.1rem;
-    //     margin-top: 0.1rem;
-
-    //     a {
-    //         display: block;
-    //         width: 100%;
-    //     }
-
-    //     h2 {
-    //         align-self: center;
-    //     }
-    // }
-
-    // .technologies {
-    //     background: $font-color !important;
-
-    //     h1 {
-    //         color: $accent-color;
-    //     }
-    // }
+@media (min-width: 768px) {
+    .technologies h1::after {
+        border-bottom: unset;
+    }
 }
 
 @media (min-width: 1600px) {

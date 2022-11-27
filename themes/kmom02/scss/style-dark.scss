@@ -5,8 +5,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
-@import 'mixins';
+@import 'variables-dark';
+@import 'mixins-dark';
 
 @import 'fonts';
 @import 'typography';
@@ -23,4 +23,4 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'me';
 @import 'analysis';
 
-@import 'test'
+@import 'test';

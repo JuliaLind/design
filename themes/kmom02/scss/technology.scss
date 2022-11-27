@@ -10,34 +10,51 @@
 .sidebar {
     order: 1;
     width: 12rem;
-    // min-width: 12rem;
     display: flex;
     flex-direction: column;
-    background-image: url('../../../assets/img/keyes-light.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $sidebar-background;
+    box-shadow: $shadow-right;
     align-items: baseline;
     flex-shrink: 0;
-    justify-content: space-around;
+    justify-content: flex-start;
+    row-gap: 5vh;
+
+    // position: -webkit-sticky; /* Safari */
+    position: sticky;
+    z-index: 90;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    padding-bottom: 30vh;
+    padding-top: 10vh;
+
 
     a {
         font-family: $main-font;
         text-decoration: none;
-        color: $font-color;
+        color: $sidebar-a-color;
         text-transform: uppercase;
         margin-left: $magic-number * 2;
     }
 
     .active {
-        text-decoration: overline $font-alternative-color !important;
+        text-decoration: $sidebar-active-decoration;
+        color: $sidebar-active-color;
         text-decoration-thickness: 3px;
-        color: $font-alternative-color;
+    }
+
+    .active:hover {
+        color: $sidebar-active-hover-color;
+    }
+
+    a:hover {
+        color: $sidebar-a-hover-color;
     }
 }
 
 .article {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 4.5rem;
     padding: 0 4.5rem 4.5rem;
     order: 2;
     flex-shrink: 1;
@@ -63,6 +80,7 @@
 
     .article-container {
         height: auto;
-        // padding-bottom: 4.5rem;
+        min-height: 99vh;
+        padding-bottom: 3rem;
     }
 }

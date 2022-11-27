@@ -4,7 +4,12 @@
 }
 
 .nav {
-    z-index: 50;
+    z-index: 100;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 
 .nav ul {
@@ -12,11 +17,15 @@
     justify-content: flex-end;
     padding: 1em 0;
     list-style: none;
+    align-items: center;
+    margin-bottom: unset;
+    padding: 0;
 }
 
 
 .nav ul li {
     padding: 0 1em;
+    margin-bottom: unset;
 }
 
 .nav a,
@@ -33,28 +42,25 @@
         flex-direction: column;
     }
 
+    .nav {
+        z-index: 140 !important;
+    }
+
     .nav ul {
         flex-direction: column;
         padding-bottom: 1em;
-
-        // maybe remove later
         justify-content: space-around;
         width: 100%;
-        background-color: $background-color;
         position: fixed;
         right: 0;
         top: 0;
-        border-bottom: 3px solid $accent-color;
         height: 100vh;
-        color: $accent-color;
-        background-color: $font-color;
+        background-color: $background-color;
     }
 
-    // maybe remove later
-    .nav a,
     .nav-toggle,
     .nav-toggle i {
-        color: $accent-color;
+        color: $main;
     }
 
 
@@ -81,6 +87,12 @@
         position: fixed;
         right: 0;
         top: 0;
-        z-index: 60;
+        z-index: 150;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav {
+        box-shadow: $shadow-down;
     }
 }

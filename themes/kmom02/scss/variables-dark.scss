@@ -1,0 +1,59 @@
+$title-color: rgb(176, 176, 176);
+$font-color: #e4e4eb;
+$accent-color: #b2976a;
+$background-color: #374151;
+$background-alternative-color: #4b586b;
+$background-alternative-header: #24243c;
+
+$main-font: 'Montserrat', sans-serif;
+$title-font: 'Playfair Display', serif;
+$site-header-font: 'Playfair Display SC', serif;
+
+$base-line-height: 1.5;
+$base-font-size: 1rem;
+$magic-number: $base-line-height * $base-font-size;
+$scale-factor: 1.414;
+$scale-factor-small: 1.333;
+// $golden-ratio: 1.62;
+
+$text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+$shadow-right: 5px 0 10px rgba(0, 0, 0, 0.2);
+$shadow-down: 0 5px 5px rgba(0, 0, 0, 0.2);
+$shadow-around: 0 0 10px rgba(0, 0, 0, 0.2);
+$background-alternative-color-transparent: rgba(211, 211, 211, 0.438);
+
+$left-light: #b3fffb;
+$left-dark: #74b3af;
+$main: #b3976b;
+$right-light: #8080ff;
+$right-dark: #6262b3;
+
+$code-background: #2b3131;
+$code-border: 1px solid $left-light;
+$hr-color: $main;
+
+$header-background-color: $background-alternative-header;
+$nav-a-hover-color: $right-light !important;
+
+$image-background: $background-alternative-header;
+$image-background-2: $right-light;
+
+$mobile-tech-background-color: $background-color;
+$mobile-tech-font-color: $font-color;
+$mobile-tech-title-color: $main;
+$mobile-tech-border: 3px solid $font-color;
+
+$logo-filter: brightness(60%);
+$me-box-title-color: $left-light;
+$me-box-content-color: #fff;
+
+$sidebar-background: $background-alternative-header;
+$sidebar-a-color: $right-dark;
+$sidebar-a-hover-color: $right-light;
+$sidebar-active-color: $right-light;
+$sidebar-active-hover-color: $right-light;
+$sidebar-active-decoration: overline $right-light !important;
+
+$analysis-background-color: $background-alternative-color;
+$analysis-font-color: #fff;

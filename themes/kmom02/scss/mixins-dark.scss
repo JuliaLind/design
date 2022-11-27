@@ -1,6 +1,6 @@
 @mixin title {
     font-family: $title-font;
-    color: $right-dark;
+    color: $main;
     margin-bottom: $magic-number;
 }
 
@@ -26,16 +26,16 @@
 
 @mixin standard-link {
     a {
-        color: currentcolor;
+        color: $left-light;
     }
 
     a:visited {
-        color: currentcolor;
+        color: $right-dark;
     }
     
     a:hover,
     a:focus {
-        color: currentcolor;
+        color: $main;
     }
 }
 

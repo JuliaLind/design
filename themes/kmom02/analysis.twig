@@ -1,0 +1,22 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main analysis-container" role="main" id="main">
+
+        <div class = "analysis-box analysis"> {{ content }} </div>
+
+        {% for page in pages("analysis") %}    
+            <div class="analysis-box {{ page.title|lower|replace({' ': '-'}) }}">
+                <a href = "{{ page.url }}">
+                <h2>{{ page.title }}</h2>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

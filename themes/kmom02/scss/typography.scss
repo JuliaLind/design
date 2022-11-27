@@ -6,28 +6,6 @@ body {
     line-height: $base-line-height;
 }
 
-.site-header {
-    h1 {
-        font-family: $site-header-font;
-        margin-top: 0;
-    }
-
-    a,
-    h1,
-    p {
-        color: $accent-color;
-    }
-}
-
-.title {
-    line-height: $base-line-height * 0.5;
-    padding: 2em 1em 1em;
-
-    p {
-        font-style: italic;
-    }
-}
-
 .main {
     max-width: 67rem;
     padding-left: 1.5rem;
@@ -46,32 +24,32 @@ body {
         display: block;
         width: 32px;
         padding-top: 3px;
-        border-bottom: 2px solid $font-alternative-color;
+        border-bottom: 2px solid $left-dark;
     }
 }
 
 
 h1 {
     @include title;
-    font-size: $base-font-size * $scale-factor * $scale-factor; 
+    font-size: $base-font-size * $scale-factor * $scale-factor * $scale-factor; 
 }
 
 h2 {
     @include subtitle;
+    font-size: $base-font-size * $scale-factor * $scale-factor;
+}
+
+h3 {
+    @include subtitle;
     font-size: $base-font-size * $scale-factor;
 }
 
-p {
+p,
+ul {
     font-size: $base-font-size;
     margin-bottom: $magic-number;
     font-weight: 300;
 }
-
-
-// p+p {
-//     text-indent: 1em;
-//     margin-top: -$magic-number;
-// }
 
 p,
 td,
@@ -84,39 +62,14 @@ dd {
 }
 
 
-.header {
-    @include link;
-
-    .nav {
-        text-transform: uppercase;
-    }
-
-    .nav a:hover {
-        color: $accent-color;
-    }
-}
-
-.footer {
-    @include link;
-
-    a,
-    p {
-        color: $background-color;
-    }
-
-    a:hover {
-        color: $accent-color;
-    }
-
-    .social a {
-        margin: 0 0.5vw;
-        font-size: 2rem;
-    }
-}
 
 ul {
-    list-style: square inside;
+    list-style: square outside;
     margin-bottom: $magic-number;
+
+    li {
+        margin-bottom: $magic-number;
+    }
 
     ul {
         margin: 0 0 0 $magic-number * 2.5;
@@ -125,15 +78,18 @@ ul {
 
 @media (max-width: 767px) {
     h1 {
-        font-size: $base-font-size * $scale-factor-small * $scale-factor-small; 
+        font-size: $base-font-size * $scale-factor-small * $scale-factor-small * $scale-factor-small; 
     }
     
     h2 {
+        font-size: $base-font-size * $scale-factor-small * $scale-factor-small;
+    }
+
+    h3 {
         font-size: $base-font-size * $scale-factor-small;
     }
 
     p {
-        // margin-top: $magic-number * 0.5;
         text-align: left;
     }
 }
@@ -142,49 +98,15 @@ ul {
     .main {
         max-width: 100%;
     }
+
+    ul {
+        list-style: square inside;
+    }
 }
 
 
 @media (min-width: 64em) {
     html {
         font-size: 112.5%;
-    }
-}
-
-@media (min-width: 768px) {
-    .site-header {
-            
-        // .title {
-        //     text-align: left;
-        // }
-
-        h1 {
-            font-size: 5rem;
-        }
-
-        p {
-            font-size: calc(5rem / ($scale-factor * 2));
-            margin-top: $magic-number * 2;
-            text-align: right;
-            margin-bottom: 0;
-        }
-    }
-}
-
-@media (min-width: 1600px) {
-    .site-header {
-        h1 {
-            font-size: 8rem;
-        }
-
-        p {
-            font-size: calc(8rem / ($scale-factor * 2.5));
-            margin-top: $magic-number * 2;
-            text-align: right;
-        }
-    }
-
-    p {
-        font-weight: 400;
     }
 }

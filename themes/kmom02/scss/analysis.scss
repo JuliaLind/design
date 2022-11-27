@@ -1,0 +1,493 @@
+
+.result-container {
+    display: grid;
+    grid-template-columns: auto repeat(3, 1fr);
+    grid-template-rows: repeat(8, auto);
+    text-align: center;
+}
+
+.foto-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1em;
+    position: relative;
+}
+
+.foto-container:hover {
+    overflow: hidden;
+}
+
+.title-cell {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+    h3 {
+        margin: unset;
+        line-height: unset;
+    }
+}
+
+.cell,
+.image-cell {
+    background-color: $analysis-background-color;
+}
+
+.cell {
+    padding: 1em;
+    border: 1px solid $background-alternative-color;
+    box-shadow: $shadow-around;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        text-align: center;
+        line-height: unset;
+        margin: unset;
+    }
+}
+
+.title-cell,
+.param {
+    h2,
+    h3,
+    p {
+        color: $analysis-font-color;
+    }
+}
+
+
+.param {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        margin: unset;
+        line-height: unset;
+    }
+}
+
+.colortheme,
+.accent {
+    padding: 0;
+
+    p {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        line-height: unset;
+        margin: unset;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+
+    img {
+        float: unset;
+        margin: 1em auto 2em;
+    }
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0;
+
+    .sample {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+.sample p {
+    margin-bottom: unset;
+    line-height: unset;
+    text-align: center;
+}
+
+.scandinavian {
+    .color1 {
+        background-color: #2e405b;
+        color: #fff;
+    }
+
+    .color2 {
+        background-color: #bfd1f2;
+        color: #000 !important;
+    }
+
+    .color3 {
+        background-color: #1164fb;
+        color: #fff;
+    }
+
+    .color4 {
+        background-color: #babeca;
+        color: #000;
+    }
+
+    .color5 {
+        background-color: #9bb8e7;
+        color: #000;
+    }    
+}
+
+.gazella {
+    .color1 {
+        background-color: #0a4e5a;
+        color: #fff;
+    }
+
+    .color2 {
+        background-color: #4784a1;
+        color: #000;
+    }
+
+    .color3 {
+        background-color: #e74e0f;
+        color: #000;
+    }
+
+    .color4 {
+        background-color: #162a33;
+        color: #fff;
+    }
+
+    .color5 {
+        background-color: #0d191e;
+        color: #fff;
+    }    
+}
+
+.mesh {
+    .color1 {
+        background-color: #1e2225;
+        color: #fff;
+    }
+
+    .color2 {
+        background-color: #004750;
+        color: #fff;
+    }
+
+    .color3 {
+        background-color: #ff9669;
+        color: #000;
+    }
+
+    .color5 {
+        background-color: #f3f7f7;
+        color: #000;
+    }
+
+    .color4 {
+        background-color: #f0d9cc;
+        color: #000;
+    }    
+}
+
+.image-cell {
+    width: 33%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0.5em;
+    flex-grow: 0;
+    box-shadow: $shadow-around;
+    padding: 2em;
+
+    .title-cell {
+        width: 100%;
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+    }
+}
+
+.title-cell {
+    h3 {
+        margin: unset;
+        line-height: unset;
+        justify-self: center;
+    }
+}
+
+.image-cell:hover {
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    padding: 0;
+}
+
+.image-cell.gazella:hover {
+    margin-left: -10.5%;
+}
+
+.image-cell.mesh:hover {
+    margin-left: -25%;
+}
+
+.screen1 {
+    grid-column: 1 / span 3;
+    grid-row: 2 /span 1;
+    width: 100%;
+}
+
+.screen2 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    width: 100%;
+}
+
+.screen3 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    width: 100%;
+}
+
+.accent {
+    display: flex;
+    align-items: center;
+}
+
+.accent img {
+    width: 100%;
+}
+
+.accent.scandinavian img,
+.accent.mesh img {
+    width: 90%;
+}
+
+.analysis-container {
+    width: 100%;
+    margin-top: 2em;
+    display: grid;
+    grid-template-rows: auto repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+
+    h1 {
+        font-size: 500%;
+        margin: unset;
+        line-height: unset;
+    }
+
+    h2 {
+        font-size: 400%;
+        text-transform: uppercase;
+        margin: unset;
+        line-height: unset;
+    }
+}
+
+.load,
+.colors,
+.design-principles {
+    opacity: 0.5;
+}
+
+.load:hover,
+.colors:hover,
+.design-principles:hover {
+    opacity: 1;
+}
+
+
+.analysis-box {
+    box-shadow: $shadow-around;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.analysis {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    background-color: $right-light;
+    padding: 2em;
+
+    h1 {
+        color: $background-color;
+    } 
+}
+
+.load {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-color: $left-light;
+
+    h2 {
+        color: $right-dark;
+    }
+}
+
+.colors {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    background-color: $right-light;
+
+    h2 {
+        color: $background-color;
+    }
+}
+
+.design-principles {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+    background-color: $left-light;
+
+    h2 {
+        color: $right-dark;
+    }
+}
+
+@media (max-width: 1100px) {
+    .scroll-container {
+        width: 100%;
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .analysis-article {
+        flex-shrink: 1;
+        padding-left: 1em;
+        padding-right: 1em;
+        max-width: 80%;
+    }
+
+    .cell {
+        width: 200px;
+    }
+
+    .foto-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .image-cell.gazella:hover,
+    .image-cell.mesh:hover {
+        margin: unset;
+        flex-grow: unset;
+    }
+
+    .image-cell:hover {
+        flex-grow: unset;
+        flex-shrink: unset;
+        width: 90%;
+    }
+
+    .image-cell {
+        width: 90%;
+        flex-shrink: unset;
+        flex-grow: unset;
+        flex-grow: 1;
+        flex-basis: 1;
+    }
+ 
+    .foto-container:hover {
+        overflow: unset;
+    }
+
+    .param {
+        // position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        z-index: 1;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .result-container {
+        width: 750px;
+        position: relative;
+    }
+
+    .cell {
+        width: unset;
+    }
+
+    .scroll-container {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .article-container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    // .foto-container {
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+
+
+
+    .analysis-container {
+        grid-template-rows: 5rem repeat(3, 2rem);
+        grid-template-columns: 1fr;
+    
+        h1 {
+            font-size: 400%;
+            margin: unset;
+            line-height: unset;
+        }
+    
+        h2 {
+            font-size: 125%;
+            text-transform: uppercase;
+            margin: unset;
+            line-height: unset;
+        }
+    }
+
+    .analysis {
+        border-radius: unset;
+        margin-bottom: 1.5rem;
+        background-color: $background-color;
+        box-shadow: unset;
+
+        h1 {
+            color: $mobile-tech-title-color;
+        }
+    }
+
+    .design-principles,
+    .colors,
+    .load,
+    .analysis {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .colors,
+    .load,
+    .design-principles {
+        opacity: unset;
+        background-color: $mobile-tech-background-color;
+        border: $mobile-tech-border;
+
+        h2 {
+            color: $mobile-tech-font-color;
+        }
+    }
+}

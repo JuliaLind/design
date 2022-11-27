@@ -1,15 +1,20 @@
-.me-container {
+.main.home {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: auto repeat(3, auto);
     width: 100%;
-    margin-top: 3rem;
-    padding: 0;
+    padding-bottom: 20vh;
     row-gap: 5%;
     column-gap: 0;
-    margin-left: unset;
     text-align: left;
-    margin-bottom: 3rem;
+    min-height: 90vh;
+    padding-left: unset;
+    padding-right: unset;
+
+    h1 {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+    }
 }
 
 .me-box {
@@ -20,11 +25,16 @@
     justify-content: center;
     border-radius: 20px;
     position: relative;
-    margin: 0;
+    box-shadow: $shadow-around;
 
     p {
         margin-bottom: 0;
         text-align: left;
+    }
+
+    p,
+    li {
+        color: $me-box-content-color;
     }
 
     img {
@@ -42,49 +52,55 @@
 
     ul li {
         text-align: left;
+        margin-bottom: unset;
     }
 
-    h2 {
+    h2,
+    h3 {
         margin-top: unset;
+        color: $me-box-title-color;
     }
+}
+
+.image1,
+.image2,
+.image3 {
+    background-color: $image-background-2;
 }
 
 .image1 {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+    grid-row: 2 / span 1;
     overflow: hidden;
 
     img {
         position: absolute;
         bottom: -460%;
         right: -30%;
-
-        // bottom: -380%;
-        // right: -30%;
     }
 }
 
 .about-me {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+    grid-row: 2 / span 1;
     padding: 3em;
 }
 
 .image2 {
     grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
     overflow: hidden;
 
     img {
         position: absolute;
         bottom: -190%;
-        left: -170%;
+        left: -160%;
     }
 }
 
 .likes,
 .dislikes {
-    h2 {
+    h3 {
         margin-right: -2em;
         margin-left: -2em;
     }
@@ -92,24 +108,20 @@
 
 .likes {
     grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
     padding: 3em;
     align-items: center;
 }
 
 .image3 {
     grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 1;
     overflow: hidden;
 
     img {
         position: absolute;
-
         bottom: -250%;
         left: -90%;
-    
-        // bottom: -190%;
-        // left: -90%;
     }
 }
 
@@ -119,7 +131,7 @@
 
 .dislikes {
     grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 1;
     padding: 3em;
     align-items: center;
 }
@@ -129,14 +141,13 @@
         img {
             left: 0;
             bottom: -400%;
-
         }
     }
 
     .image3,
     .dislikes {
         grid-column: 1 / span 2;
-        grid-row: 3 / span 1;
+        grid-row: 4 / span 1;
 
         h2 {
             display: block;
@@ -154,7 +165,7 @@
     .image2,
     .likes {
         grid-column: 2 / span 2;
-        grid-row: 2 / span 1;
+        grid-row: 3 / span 1;
 
         h2 {
             display: block;
@@ -172,17 +183,22 @@
 }
 
 @media (max-width: 767px) {
-    .me-container {
+    .main.home {
+        background-color: $image-background;
+
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: auto repeat(3, auto);
         row-gap: 0;
         margin-top: 0;
         margin-bottom: 0;
         max-width: 100%;
-        
 
-        h2 {
+        h1 {
+            margin-top: 3rem;
+        }
+
+        h3 {
             margin-left: unset;
             margin-right: unset;
         }
@@ -190,6 +206,7 @@
 
     .me-box {
         max-width: 100%;
+        box-shadow: unset;
     }
 
     .about-me,
@@ -199,7 +216,6 @@
         padding-bottom: $magic-number;
         align-items: flex-start;
 
-
         ul {
             text-align: left;
         }
@@ -208,14 +224,12 @@
     .image4 {
         display: flex;
         grid-column: 1 / span 1;
-        grid-row: 1 / span 3;
+        grid-row: 1 / span 4;
         overflow: hidden;
 
         img {
             position: absolute;
-            top: -20%;
-            left: 0;
-
+            width: 130%;
         }
     }
 
@@ -227,19 +241,19 @@
 
     .about-me {
         grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
+        grid-row: 2 / span 1;
     }
 
     .likes {
         grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
+        grid-row: 3 / span 1;
     }
 
 
 
     .dislikes {
         grid-column: 1 / span 1;
-        grid-row: 3 / span 1;
+        grid-row: 4 / span 1;
     }
 }
 
@@ -254,7 +268,9 @@
 
     .image4 {
         img {
-            top: 5%;
+            width: 250%;
+            transform: rotate(-20deg);
+            top: 25%;
             left: -40%;
         }
     }
