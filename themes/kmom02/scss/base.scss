@@ -45,6 +45,8 @@ hr {
 
 .footer {
     @include link;
+    position: fixed;
+    bottom: 0;
 
     display: flex;
     justify-content: space-between;

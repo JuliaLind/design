@@ -47,10 +47,15 @@
         font-family: $site-header-font;
         margin-top: 0;
         text-shadow: $text-shadow;
+        font-size: 10rem;
     }
 
     p {
         font-style: italic;
+        font-size: calc(10rem / ($scale-factor * 2.5));
+        margin-top: $magic-number * 2;
+        text-align: right;
+        font-weight: 400;
     }
 
     a,
@@ -67,9 +72,27 @@
     filter: $logo-filter;
 }
 
+@media (max-width: 1270px) {
+    .site-header {
+        padding: 3rem;
+
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .active {
         text-decoration: underline $main;
+    }
+
+    .site-header {
+        padding: 1em;
     }
 
     .header,
@@ -87,30 +110,19 @@
         }
     }
 
-    
     .site-header {
         margin-top: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 70vh auto;
+        grid-template-rows: 2fr 1fr 2fr;
         gap: 0;
         overflow: hidden;
 
         .logo {
             grid-column: 1 / span 1;
-            grid-row: 1 / span 2;
-            overflow: hidden;
-            margin: unset;
-            padding: unset;
-
-            img {
-                width: 100%;
-                transform: unset;
-                margin: unset;
-                padding: unset;
-                filter: blur(5px) brightness(70%);
-                z-index: -1;
-            }
+            grid-row: 1 / span 4;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .title {
@@ -118,24 +130,19 @@
             grid-row: 1 / span 1;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100%;
             z-index: 1;
 
-            h1 {
-                font-size: 15vw;
-                line-height: $base-line-height;
-            }
-
             p {
-                font-size: 8vw;
+                display: none;
             }
         }
 
         .scroll-to {
             grid-column: 1 / span 1;
-            grid-row: 2 / span 1;
+            grid-row: 4 / span 2;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -163,16 +170,15 @@
 }
 
 @media (max-width: 400px) {
-    .logo {
-        height: 100vh;
-        width: auto;
-        overflow: hidden;
-        margin: unset;
-    }
-
     .site-header {
         .scroll-to {
             justify-content: space-around;
+        }
+
+        .title {
+            h1 {
+                font-size: 3rem;
+            }
         }
     }
 }
@@ -193,17 +199,6 @@
 
     .site-header {
         margin-top: 3rem;
-
-        h1 {
-            font-size: 10rem;
-        }
-
-        p {
-            font-size: calc(10rem / ($scale-factor * 2.5));
-            margin-top: $magic-number * 2;
-            text-align: right;
-            font-weight: 400;
-        }
     }
 }
 

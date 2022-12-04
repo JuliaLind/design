@@ -31,15 +31,15 @@ Det ska bli intresssant att undersöka likheter och skillnader i hur de presente
 <div class="title-cell"><h3>Scandinavian Executive</h3></div>
 
 <div class="screen1">
-<a href="../image/Scand-Exec-1.jpg"><img src="../image/Scand-Exec-1.jpg" alt="website screenshot"></a>
+<a href="../image/Scand-Exec-1.jpg"><img src="../image/Scand-Exec-1.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 <div class="screen2">
-<a href="../image/Scand-Exec-3.jpg"><img src="../image/Scand-Exec-3.jpg" alt="website screenshot"></a>
+<a href="../image/Scand-Exec-3.jpg"><img src="../image/Scand-Exec-3.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 <div class="screen3">
-<a href="../image/Scand-Exec-4.jpg"><img src="../image/Scand-Exec-5.jpg" alt="website screenshot"></a>
+<a href="../image/Scand-Exec-4.jpg"><img src="../image/Scand-Exec-5.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 </div>
@@ -49,15 +49,15 @@ Det ska bli intresssant att undersöka likheter och skillnader i hur de presente
 <div class="title-cell"><h3>Gazella</h3></div>
 
 <div class="screen1">
-<a href="../image/gazella-1.jpg"><img src="../image/gazella-1.jpg" alt="website screenshot"></a>
+<a href="../image/gazella-1.jpg"><img src="../image/gazella-1.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 <div class="screen2">
-<a href="../image/gazella-3.jpg"><img src="../image/gazella-3.jpg" alt="website screenshot"></a>
+<a href="../image/gazella-3.jpg"><img src="../image/gazella-3.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 <div class="screen3">
-<a href="../image/gazella-4.jpg"><img src="../image/gazella-4.jpg" alt="website screenshot"></a>
+<a href="../image/gazella-4.jpg"><img src="../image/gazella-4.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 </div>
@@ -67,20 +67,21 @@ Det ska bli intresssant att undersöka likheter och skillnader i hur de presente
 <div class="title-cell"><h3>Mesh</h3></div>
 
 <div class="screen1">
-<a href="../image/mesh-1.jpg"><img src="../image/mesh-1.jpg" alt="website screenshot"></a>
+<a href="../image/mesh-1.jpg"><img src="../image/mesh-1.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 <div class="screen2">
-<a href="../image/mesh-2.jpg"><img src="../image/mesh-2.jpg" alt="website screenshot"></a>
+<a href="../image/mesh-2.jpg"><img src="../image/mesh-2.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 <div class="screen3">
-<a href="../image/mesh-3.jpg"><img src="../image/mesh-3.jpg" alt="website screenshot"></a>
+<a href="../image/mesh-3.jpg"><img src="../image/mesh-3.jpg?q=40" alt="website screenshot"></a>
 </div>
 
 </div>
 
 </div>
+
 
 
 

@@ -6,11 +6,8 @@ Description: This is my index page.
 Home page
 ==========================
 
-
-<!-- <div class="me-container" markdown=1> -->
-
 <div class="me-box image1">
-<img src="assets/img/chocolate.jpg" alt="melted chocolate">
+<img src="image/chocolate.jpg" alt="melted chocolate">
 </div>
 
 <div class="me-box about-me" markdown=1>

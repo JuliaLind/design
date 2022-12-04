@@ -1,0 +1,132 @@
+.colortheme,
+.accent {
+    padding: 0;
+
+    p {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        line-height: unset;
+        margin: unset;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+
+    img {
+        float: unset;
+        margin: 1em auto 2em;
+    }
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0;
+
+    .sample {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+.sample p {
+    margin-bottom: unset;
+    line-height: unset;
+    text-align: center;
+}
+
+.scandinavian {
+    .color1 {
+        background-color: #2e405b;
+        color: #fff;
+    }
+
+    .color2 {
+        background-color: #bfd1f2;
+        color: #000 !important;
+    }
+
+    .color3 {
+        background-color: #1164fb;
+        color: #fff;
+    }
+
+    .color4 {
+        background-color: #babeca;
+        color: #000;
+    }
+
+    .color5 {
+        background-color: #9bb8e7;
+        color: #000;
+    }    
+}
+
+.gazella {
+    .color1 {
+        background-color: #0a4e5a;
+        color: #fff;
+    }
+
+    .color2 {
+        background-color: #4784a1;
+        color: #000;
+    }
+
+    .color3 {
+        background-color: #e74e0f;
+        color: #000;
+    }
+
+    .color4 {
+        background-color: #162a33;
+        color: #fff;
+    }
+
+    .color5 {
+        background-color: #0d191e;
+        color: #fff;
+    }    
+}
+
+.mesh {
+    .color1 {
+        background-color: #1e2225;
+        color: #fff;
+    }
+
+    .color2 {
+        background-color: #004750;
+        color: #fff;
+    }
+
+    .color3 {
+        background-color: #ff9669;
+        color: #000;
+    }
+
+    .color5 {
+        background-color: #f3f7f7;
+        color: #000;
+    }
+
+    .color4 {
+        background-color: #f0d9cc;
+        color: #000;
+    }    
+}
+
+.accent {
+    display: flex;
+    align-items: center;
+}
+
+.accent img {
+    width: 100%;
+}
+
+.accent.scandinavian img,
+.accent.mesh img {
+    width: 90%;
+}
