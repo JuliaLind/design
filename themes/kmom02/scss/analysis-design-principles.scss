@@ -1,0 +1,8 @@
+.result-container.design {
+    grid-template-columns: auto repeat(4, 1fr);
+    // grid-template-rows: repeat(8, auto);
+
+    .param {
+        align-items: flex-end;
+    }
+}
