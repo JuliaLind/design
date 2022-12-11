@@ -5,11 +5,10 @@
 }
 
 .header {
-    flex: 0 0 auto;
-}
-
-.header {
     @include link;
+
+    flex: 0 0 auto;
+    z-index: 91;
 
     .nav {
         text-transform: uppercase;
@@ -92,7 +91,7 @@
     }
 
     .site-header {
-        padding: 1em;
+        padding: 0;
     }
 
     .header,
@@ -100,29 +99,23 @@
         height: 100vh;
     }
 
-    @keyframes MoveDown {
-        0% {
-            bottom: 8rem;
-        }
-
-        100% {
-            bottom: 2rem;
-        }
-    }
-
     .site-header {
         margin-top: 0;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 70vh auto;
         gap: 0;
         overflow: hidden;
 
         .logo {
-            grid-column: 1 / span 1;
-            grid-row: 1 / span 4;
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 4.5rem;
+            margin-right: 3rem;
+            display: flex;
+            align-items: flex-start;
         }
 
         .title {
@@ -135,47 +128,82 @@
             height: 100%;
             z-index: 1;
 
+            h1 {
+                font-size: 3.75rem;
+            }
+
             p {
-                display: none;
+                font-size: calc(3.75rem/$magic-number);
             }
         }
 
-        .scroll-to {
-            grid-column: 1 / span 1;
-            grid-row: 4 / span 2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            height: 100%;
-            padding-top: 3vh;
+        
+        .logo img {
+            height: 75vh;
+            width: auto;
         }
 
         .scroll-to.hidden {
-            display: flex !important;
-            position: relative;
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
             color: $main;
-            width: 100%;
+            display: flex !important;
+            background-color: rgba(0, 0, 0, 0.435);
+            padding: 1rem;
+            margin-bottom: 1rem;
         }
-    
-        .scroll-to .fa-chevron-down {
-            position: absolute;
-            display: block;
-            width: 100%;
-            animation: MoveDown 1.5s linear infinite;
-            animation-direction: normal;
-            text-align: center;
-        }
+
     }
 }
 
 @media (max-width: 400px) {
     .site-header {
-        .scroll-to {
-            justify-content: space-around;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr 1fr;
+        gap: 0;
+        overflow: hidden;
+
+        .logo {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            margin: auto;
+        }
+
+        .logo img {
+            height: 50vh;
+            width: auto;
+        }
+
+        .scroll-to.hidden {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            color: $main;
         }
 
         .title {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            height: 100%;
+            z-index: 1;
+
+            a {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            h1,
+            h2 {
+                margin: unset;
+            }
+
             h1 {
                 font-size: 3rem;
             }
@@ -195,6 +223,11 @@
 
     .header {
         box-shadow: $shadow-down;
+        max-height: 25rem;
+    }
+
+    .logo {
+        z-index: 1000;
     }
 
     .site-header {

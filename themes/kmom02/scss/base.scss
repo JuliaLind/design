@@ -20,6 +20,7 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     position: relative;
+    padding-bottom: 4.5rem;
 }
 
 .main {
@@ -45,9 +46,10 @@ hr {
 
 .footer {
     @include link;
-    position: fixed;
+    // position: absolute;
+    position: absolute;
     bottom: 0;
-
+    align-items: center;
     display: flex;
     justify-content: space-between;
     background-color: $right-dark;
@@ -62,6 +64,7 @@ hr {
 
     p {
         color: $left-light;
+        margin-bottom: unset;
     }
 
     a:hover {
@@ -72,6 +75,11 @@ hr {
         margin: 0 0.5vw;
         font-size: 2rem;
     }
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 767px) {

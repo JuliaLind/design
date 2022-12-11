@@ -1,6 +1,6 @@
 $title-color: rgb(176, 176, 176);
 $font-color: #e4e4eb;
-$accent-color: #b2976a;
+// $accent-color: #b2976a;
 $background-color: #374151;
 $background-alternative-color: #4b586b;
 $background-alternative-header: #24243c;
@@ -12,7 +12,8 @@ $site-header-font: 'Playfair Display SC', serif;
 $base-line-height: 1.5;
 $base-font-size: 1rem;
 $magic-number: $base-line-height * $base-font-size;
-$scale-factor: 1.414;
+// $scale-factor: 1.414;
+$scale-factor: 1.618;
 $scale-factor-small: 1.333;
 // $golden-ratio: 1.62;
 
@@ -52,7 +53,7 @@ $me-box-title-color: $left-light;
 $me-box-content-color: #fff;
 
 $sidebar-background: $background-alternative-header;
-$sidebar-a-color: $right-dark;
+$sidebar-a-color: #fff;
 $sidebar-a-hover-color: $right-light;
 $sidebar-active-color: $right-light;
 $sidebar-active-hover-color: $right-light;
@@ -60,3 +61,5 @@ $sidebar-active-decoration: overline $right-light !important;
 
 $analysis-background-color: $background-alternative-color;
 $analysis-font-color: #fff;
+
+$analysis-font-color2: $right-light;

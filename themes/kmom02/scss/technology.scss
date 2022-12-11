@@ -26,7 +26,6 @@
     bottom: 0;
     left: 0;
     height: 100vh;
-    // min-height: 100vh;
     padding-bottom: 30vh;
     padding-top: 10vh;
 
@@ -42,7 +41,7 @@
     .active {
         text-decoration: $sidebar-active-decoration;
         color: $sidebar-active-color;
-        text-decoration-thickness: 3px;
+        text-decoration-thickness: 4px;
     }
 
     .active:hover {

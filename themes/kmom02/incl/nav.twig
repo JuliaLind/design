@@ -2,23 +2,28 @@
     <div class="site-header">
         {% if pages["_meta"].meta.logo %}
         <div class="logo">
-            <a href="{{ base_url }}">
+            <a href="{{ base_url }}" aria-label="Link to home-page">
+            <picture>
+                <source media="(min-width: 668px)" srcset="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}?width=250">
                 <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
+            </picture>
             </a>
         </div>
         {% endif %}
         <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
-            <a href="{{ base_url }}">
+            <a href="{{ base_url }}" aria-label="Link to home-page">
                 <h1>{{ site_title }}</h1>
                 {{ pages["_meta"].meta.tagline|markdown }}
             </a>
         </div>
-        <a class="scroll-to hidden" href="#main">
+        <a class="scroll-to hidden" href="#main" aria-label="Link to the main part of the page">
             <i class="fas fa-chevron-down" aria="hidden=true"></i>
             <span>Scroll down</span>
         </a>
-        <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false"
-            tabindex="1">
+        {# <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false"
+            tabindex="1"> #}
+            <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false"
+            tabindex="0">
             <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
             <span class="sr-only">Toggle Menu</span>
         </a>

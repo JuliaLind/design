@@ -78,7 +78,8 @@ ul {
 
 @media (max-width: 767px) {
     h1 {
-        font-size: $base-font-size * $scale-factor-small * $scale-factor-small * $scale-factor-small; 
+        font-size: $base-font-size * $scale-factor-small * $scale-factor-small * $scale-factor-small;
+        margin-left: $magic-number;
     }
     
     h2 {

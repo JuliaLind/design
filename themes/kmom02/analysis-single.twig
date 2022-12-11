@@ -4,7 +4,7 @@
     {% include 'incl/nav.twig' %}
 
     <div class = "article-container">
-    <div class="main article analysis-article" role="main" id="main">
+    <div class="main article analysis-article {{ meta.title|lower|replace({' ': '-'}) }}" role="main" id="main">
     {{ content }}
     </div>
     <div class = "sidebar">

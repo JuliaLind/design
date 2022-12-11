@@ -1,6 +1,7 @@
 ---
 Title: Test
 Description: This is my index page.
+hidden: true
 ---
 
 Testing page

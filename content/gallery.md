@@ -94,5 +94,5 @@ Gallery
 </div>
 
 <div class="embed-container">
-    <iframe src="https://www.youtube.com/embed/WL6d5nptaAQ" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/WL6d5nptaAQ" frameborder="0" title="youtube video of painting a picture in purple" allowfullscreen></iframe>
 </div>

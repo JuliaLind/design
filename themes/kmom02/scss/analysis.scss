@@ -1,4 +1,5 @@
 @import 'analysis-colors';
+@import 'analysis-design-principles';
 
 .result-container {
     display: grid;
@@ -73,10 +74,6 @@
     }
 }
 
-
-
-
-
 .image-cell {
     width: 33%;
     display: grid;
@@ -136,18 +133,14 @@
     width: 100%;
 }
 
-
-
 .analysis-container {
     width: 100%;
-    margin-top: 2em;
     display: grid;
     grid-template-rows: auto repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
+    gap: $magic-number;
 
     h1 {
-        font-size: 500%;
         margin: unset;
         line-height: unset;
     }
@@ -160,16 +153,16 @@
     }
 }
 
-.load,
-.colors,
-.design-principles {
-    opacity: 0.5;
+.analysis-box.load,
+.analysis-box.colors,
+.analysis-box.design-principles {
+    opacity: 1;
 }
 
-.load:hover,
-.colors:hover,
-.design-principles:hover {
-    opacity: 1;
+.analysis-box.load:hover,
+.analysis-box.colors:hover,
+.analysis-box.design-principles:hover {
+    opacity: 0.5;
 }
 
 
@@ -190,18 +183,21 @@
     }
 }
 
-.analysis {
+.analysis-box.analysis {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
-    background-color: $right-light;
-    padding: 2em;
+    // padding: 2em;
+    box-shadow: none;
+    justify-content: flex-start;
+    margin-top: 4.5rem;
 
     h1 {
-        color: $background-color;
+        // color: $analysis-font-color2;
+        margin-bottom: 3rem;
     } 
 }
 
-.load {
+.analysis-box.load {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     background-color: $left-light;
@@ -211,7 +207,7 @@
     }
 }
 
-.colors {
+.analysis-box.colors {
     grid-column: 2 / span 2;
     grid-row: 2 / span 1;
     background-color: $right-light;
@@ -221,7 +217,7 @@
     }
 }
 
-.design-principles {
+.analysis-box.design-principles {
     grid-column: 1 / span 3;
     grid-row: 3 / span 1;
     background-color: $left-light;
@@ -318,11 +314,11 @@
         grid-template-rows: 5rem repeat(3, 2rem);
         grid-template-columns: 1fr;
     
-        h1 {
-            font-size: 400%;
-            margin: unset;
-            line-height: unset;
-        }
+        // h1 {
+        //     font-size: 400%;
+        //     margin: unset;
+        //     line-height: unset;
+        // }
     
         h2 {
             font-size: 125%;
@@ -332,7 +328,7 @@
         }
     }
 
-    .analysis {
+    .analysis-box.analysis {
         border-radius: unset;
         margin-bottom: 1.5rem;
         background-color: $background-color;
@@ -343,17 +339,17 @@
         }
     }
 
-    .design-principles,
-    .colors,
-    .load,
-    .analysis {
+    .analysis-box.design-principles,
+    .analysis-box.colors,
+    .analysis-box.load,
+    .analysis-box.analysis {
         grid-column: unset;
         grid-row: unset;
     }
 
-    .colors,
-    .load,
-    .design-principles {
+    .analysis-box.colors,
+    .analysis-box.load,
+    .analysis-box.design-principles {
         opacity: unset;
         background-color: $mobile-tech-background-color;
         border: $mobile-tech-border;

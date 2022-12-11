@@ -60,7 +60,7 @@ Resultat
 Studien ledde till följande observationer:
 
 <div class="scroll-container">
-<iframe width=100% height=600px src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTx1MK-g1zmT6pprXEb60PCej7BKveJ7PysDbg9POtk-DRWpfji2vUg66Jb2hDZI04nzDtj8t_ok8Qg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe width=100% height=600px src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTx1MK-g1zmT6pprXEb60PCej7BKveJ7PysDbg9POtk-DRWpfji2vUg66Jb2hDZI04nzDtj8t_ok8Qg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="analysis results in google-sheets"></iframe>
 </div>
 
 
@@ -69,7 +69,7 @@ Studien ledde till följande observationer:
 Analys
 -----------------------
 
-Från början hade jag tänkt utföra testet för respektive sida genom att endast ladda om sidan och skriva ner värdena, men upptäckte snart att samtliga webbplatserna använde sig av lazyload vilket innebär att innehåll laddas in först när den blir nödvändig och att den initiella laddningstiden då ändrades i efterhand som man scrollade ner på sidan, vilket innebar att jag fick anpassa min metod något för att få med laddningstiden för hela sidan och inte enbart det som är "above the fold" (dvs den delen som man ser först när man besöker webbplatsen).  
+Från början hade jag tänkt utföra testet för respektive sida genom att endast ladda om sidan och skriva ner värdena, men upptäckte snart att samtliga webbplatserna använde sig av lazyload vilket innebär att innehåll laddas in först när den blir nödvändig och att den initiella laddningstiden då ändrades i efterhand som man scrollade ner på sidan, vilket innebar att jag fick anpassa min metod något för att få med laddningstiden för hela sidan och inte enbart det som är "above the fold" (dvs den delen som man ser i förstahand, när man besöker webbplatsen).  
 
 I början utgick jag ifrån att mätningen var totaltiden för respektive förfrågan till att resursen laddats in (eftersom det var så jag tolkade devtools dokumentationen), men det kändes inte som att så var fallet eftersom det kunde bli en rejäl skillnad i laddningstid beroende på om jag scrollade ner direkt eller avvaktade en liten stund innan jag började scrolla. Det kan ha varit en tillfällighet, men för att minimera den person-beroende effekten på mätningen försökte jag att scrolla hela vägen ner så snabbt som möjligt för att eventuella förfrågningar skulle gå iväg på en gång. 
 
@@ -113,15 +113,15 @@ Intressant nog så visade devtools mätningarna kortast laddningstid för just M
 
 ### Mätningar bilder i dev tools
 
-När jag sedan tittar på bilder så utgör dessa hos Scandinavian Executives i genomsnitt ca 24% av totalt antal begäran men endast 9% av total storlek. Om vi tittar på genomsnittlig storlek per bild blir det 0.02 MB per bild, vilket är riktigt bra. Bilderna är främst i format webp, svg och gif, men även några png. Om vi tittar på bilderna rent visuellt så upplever jag att (på desktop) ser bilderna på Scandinavian Executives sida rätt så pixliga ut, även utan inzoomning. Jag hade gärna sett bilder i bättre kvalité på desktop eftersom det inte är lika stort behov av att spara data som på mobil enhet (de flesta har bredband). Besparingen har i detta fall synbart påverkat kvalitén. 
+När jag sedan tittar på bilder så utgör dessa hos Scandinavian Executive i genomsnitt ca 24% av totalt antal begäran men endast 9% av total storlek. Om vi tittar på genomsnittlig storlek per bild blir det 0.02 MB per bild, vilket är riktigt bra. Bilderna är främst i format webp, svg och gif, men även några png. Om vi tittar på bilderna rent visuellt så upplever jag att (på desktop) ser bilderna på Scandinavian Executive sidan rätt så pixliga ut, även utan inzoomning. Jag hade gärna sett bilder i bättre kvalité på desktop eftersom det inte är lika stort behov av att spara data som på mobil enhet (de flesta har bredband). Besparingen har i detta fall synbart påverkat kvalitén. 
 
  Hos Gazella utgör bilder i genomsnitt ca 35% av total antal begäran och 42% av total storlek, per bild blir den genomsnittliga storleken 0.12 MB, vilket är sex gånger så mycket jämfört med storleken hos Scandiavian Executives. Gazella använder sig av några svg bilder till ikoner, men i övrigt är det många jpeg, png samt några gif. När jag tittar på bilderna upplever jag kvalitén som ok (bilderna blir pixliga först när man börjar zooma in).
  
- För Mesh är motsvarande siffror 31% av totalt antal och 46% av total storlek, respektive 0.07 MB/bild. Sett till genomsnitt på storlek placerar sig alltså Mesh tvåa. Merparten av bilderna på Meshs webbplats är webp och gif format, men även några svg, png och jpeg syns till. På Meshs sida upplever jag bilderna som bra kvalité - vissa av de mindre bilderna är något pixliga, men de de flesta upplever jag som tydliga, även vid inzoomning. Mesh har i mitt tycke hittat en bra balans här mellan besparing och presenation.
+ För Mesh är motsvarande siffror 31% av totalt antal och 46% av total storlek, respektive 0.07 MB/bild. Sett till genomsnitt på storlek placerar sig alltså Mesh tvåa. Merparten av bilderna på Meshs webbplats är webp och gif format, men även några svg, png och jpeg syns till. På Meshs sida upplever jag bilderna som bra kvalité - vissa av de mindre bilderna är något pixliga, men de de flesta upplever jag som tydliga, även vid inzoomning. Mesh har i mitt tycke hittat en bra balans här mellan besparing och presentation.
 
 ### Mätningar javascript i dev tools
 
-I genomsnitt utgjorde Javascript på Scandinavian Exectuives sidan ca 51% av totala antalet begäran och 58% av sidans totala storlek. Per begäran var storleken i genomsnitt 0.07MB.
+I genomsnitt utgjorde Javascript på Scandinavian Exectuive sidan ca 51% av totala antalet begäran och 58% av sidans totala storlek. Per begäran var storleken i genomsnitt 0.07MB.
 
 Hos Gazella utgjorde Javascript ca 35% av totalt antal begäran från sidan samt ca 45% av sidans totala storlek. Per begäran av storleken 0.12MB.
 
@@ -141,25 +141,10 @@ När det kommer till javascript utgör antal begäran lite mer än hälften av s
 
 
 
-
-
-
-
-
-
-
-
-
-
-### Mesh 
-
-
-
-
 Referenser
 -----------------------
 
-
+https://pagespeed.web.dev/
 
 
 Övrigt

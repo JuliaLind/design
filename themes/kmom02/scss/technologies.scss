@@ -1,10 +1,10 @@
 .tech-container {
     display: grid;
-    padding-top: 1rem;
-    gap: 1rem;
+    // padding-top: 1rem;
+    gap: $magic-number;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10rem repeat(5, 10rem);
+    grid-template-rows: auto repeat(5, 10rem);
 
     a {
         text-decoration: none;
@@ -16,13 +16,13 @@
     }
 
     h1 {
-        padding: unset;
-        margin: unset;
-        font-weight: 600;
-
-        text-align: center;
-        font-size: 6rem;
-        font-weight: bold;
+        // padding: unset;
+        // margin: unset;
+        // text-align: center;
+        // font-size: 500%;
+        // font-weight: bold;
+        // color: $analysis-font-color2;
+        margin-bottom: $magic-number * 2;
     }
     
     h2 {
@@ -35,10 +35,9 @@
 
 .tech-box {
     padding: 0;
-    background-color: $background-alternative-color;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +55,7 @@
 }
 
 .tech-box:hover {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .css,
@@ -85,12 +84,10 @@
 .technologies {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
-    background-color: $right-light;
     opacity: 1 !important;
-
-    h1 {
-        color: $background-color;
-    }
+    box-shadow: none;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .javascript {
@@ -165,12 +162,6 @@
 @media (max-width: 1350px) {
     .tech-container {
         grid-template-rows: 9rem repeat(5, 6rem);
-
-        h1 {
-            font-size: 6rem;
-            letter-spacing: 0;
-            margin: 0;
-        }
     }
 
     .tech-box {
@@ -249,7 +240,7 @@
             border: $mobile-tech-border;
         }
     
-        h1,
+        // h1,
         h2 {
             color: $font-color;
             margin: unset;
@@ -257,9 +248,9 @@
             font-weight: unset;
         }
 
-        h1 {
-            font-size: 400%;
-        }
+        // h1 {
+        //     font-size: 400%;
+        // }
 
         h2 {
             font-size: 125%;
@@ -298,10 +289,11 @@
         }
 
         .technologies {
+            width: 100%;
             background: $background-color !important;
             box-shadow: unset;
-            padding: 1em;
             margin-bottom: 1.5rem;
+            justify-content: flex-start;
 
             h1 {
                 color: $mobile-tech-title-color;
@@ -310,21 +302,9 @@
     }
 }
 
-@media (min-width: 768px) {
-    .technologies h1::after {
-        border-bottom: unset;
-    }
-}
-
 @media (min-width: 1600px) {
     .tech-container {
         grid-template-rows: 14rem repeat(5, 10rem);
-    }
-
-    .technologies {
-        h1 {
-            font-size: 8rem;
-        }
     }
 
     .css {
@@ -369,10 +349,3 @@
         }
     }
 }
-
-
-
-
-
-
-

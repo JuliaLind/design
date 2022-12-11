@@ -131,9 +131,9 @@ Studien ledde till följande observationer:
 <div class="sample color5"><p>#f0d9cc</p></div>
 </div>
 <div class="param cell"><h3>Färgschema</h3></div>
-<div class="cell colortheme"><img src="../image/Scand-Exec-colors.png" alt="color-palette"><p>Monokromt</p></div>
-<div class="cell colortheme"><img src="../image/gazella-colors.png" alt="color-palette"><p>Komplementfärg</p></div>
-<div class="cell colortheme"><img src="../image/mesh-colors.png"><p>Komplementär</p></div>
+<div class="cell colortheme"><img src="../image/Scand-Exec-colors.png" alt="color-wheel"><p>Monokromt</p></div>
+<div class="cell colortheme"><img src="../image/gazella-colors.png" alt="color-wheel"><p>Komplementfärg</p></div>
+<div class="cell colortheme"><img src="../image/mesh-colors.png" alt="color-wheel"><p>Komplementär</p></div>
 <div class="param cell"><h3>Accentfärg</h3></div>
 <div class="cell accent scandinavian"><img src="../image/scand-exec-logo.png" alt="Scandian Executive logo"><p class="color3">#1164fb</p></div>
 <div class="cell accent gazella"><img src="../image/gazella-logo.png" alt="Gazella logo"><p class="color3">#e74e0f</p></div>
