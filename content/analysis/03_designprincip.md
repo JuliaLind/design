@@ -13,7 +13,7 @@ I denna rapport analyseras användning av designprinciper på tre olika webbplat
 Urval
 -----------------------
 
-Följnade webbplatser kommer att analyseras:
+Följande webbplatser kommer att analyseras:
 
 https://devonstank.com/ 
 
@@ -182,7 +182,10 @@ Studien ledde till följande observationer (' X ' innebär att designprincipen a
 <div class="cell"><p>X</p></div>
 
 </div>
-</div>
+</div>  
+
+<br>
+
 
 Analys
 -----------------------
@@ -190,9 +193,9 @@ Analys
 ### Devon Stank
 
 
-Devon arbetar som Sqaurespace developer/designer och grundare till Squar (Squar är en Creative Digital Agency som arbetar med design och utveckling av webbplatser, med främsta fokus på Squarespace development. Squarespace är ett Content Managemenet System för webbsidor/bloggar). Främsta syftet med webbplatsen är att göra reklam för tjänster som Devon erbjuder (Squarespace konsult och säljer även kurser som hjälper andra att skapa/utveckla 'personal brand'). Devon Stanks webblats har följt i princip samtliga designprinciper och det syns tydligt att det har varit stor fokus på detaljer och varje del är väl genomtänkt. 
+Devon arbetar som Squarespace developer/designer och grundare till Squar (Squar är en Creative Digital Agency som arbetar med design och utveckling av webbplatser, med främsta fokus på Squarespace development. Squarespace är ett Content Managemenet System för webbsidor/bloggar). Främsta syftet med webbplatsen är att göra reklam för tjänster som Devon erbjuder (Squarespace konsult och säljer även kurser som hjälper andra att skapa/utveckla 'personal brand'). Devon Stanks webblats har följt i princip samtliga designprinciper och det syns tydligt att det har varit stor fokus på detaljer och varje del är väl genomtänkt. 
 
-Rubriker samt citat är stora i förhållade till navigation och brödtext, och överlag så används flera olika font-storlekar på webbsidan vilket gör så att ögonen dras till element i den av sidskaparen bestämda ordningen (scale/hierarchy). Samtliga sidor på webbplatsen har liknande format, det är också återkommande typsnitt och accentfärg vilket ger en enhetlig känsla genom hela webbplatsen (repetition / unity). Även om typografin inte är utmärkande i sig tycker jag att Devon har hittat eleganta typsnitt (Morpheus Pro och Poppins) som passar perfekt till webbplatsens övriga stilrena design. Sidan använder också en bra vertikalrytm med lagom radavstånd/marginaler mellan de olika delarna för att det ska vara tydligt vad som hänger ihop med vad (typography / unity).  
+Rubriker samt citat är stora i förhållade till navigation och brödtext, och överlag så används flera olika font-storlekar på webbsidan vilket gör så att ögonen dras till element i den av sidskaparen bestämda ordningen (scale/hierarchy). Samtliga sidor på webbplatsen har liknande format, det är också återkommande typsnitt och accentfärg vilket ger en enhetlig känsla genom hela webbplatsen (repetition / unity). Även om typografin inte är utmärkande i sig tycker jag att Devon har hittat eleganta typsnitt (Morpheus Pro och Poppins) som passar perfekt till webbplatsens övriga stilrena design. Sidan använder också en bra vertikalrytm och det är tydligt avståndsmässigt vad som hänger ihop med vad (typography / unity).  
 
 I sidan används både symmetrisk och assymetrisk balans (balance). För att placera ut element har man använt sig av grid och av flexbox. Sidan använder kontrast, både i storlek/avstånd men också i färger - svart, vitt och accentfärg (contrast/hierarchy/colour). Överlag har webbplatsen en otroligt bra helhetskänsla där varje del behövs och sidan skulle inte kännas komplett utan.
 
@@ -219,13 +222,13 @@ Rafikahs webbplats ser inte lika profesionell ut som Devon's, men syftet med web
 
 Erik Jaworski är en fotograf. Syftet med Eriks webbplats är att presentera sitt portfolio av foton samt förmedla sina kontaktuppgifter.  Han har strukturerar upp sitt innehåll väl, dels genom att dela upp det på olika kategorier i navigationen och dels genom att "klustra" ihop bilder som hör till samma porjekt/fototillfälle, vilket gör innehållet lättöverskådligt och ger sidan harmoni (harmony). De akromatiska färgerna (colour) på webbplatsen ger en bra kontrast (contract) till fotona och lyfter fram dessa väl.  På så sätt gynnar designen webbplatsens mål och syfte.
 
-Bortsett från några få element med assymetrisk balans (***om man väljer en destination under travel i navigationen så kommer man till en sida där foton är presenterade i ett grid-linande format och där de trots olika bredd fyller hela vidden perfekt och med exakt samma mellanrum mellan rader eller kolumner***) så är Eriks webbplats väldigt symmetrisk, på gott och ont. Sidans titel, rubrik och navigation ligger i mitten. På första sidan tar bilden av Erik lika myckt plats som texten om honom och båda är placerade så att de ligger på var sin sidan av sidans mitt, motsvarande gäller för Booking-sidan under rubriken Virtual Services. Även på de övriga sidorna är samtliga element antingen centrerade eller positionerade så att lika många/lika stora element är till höger som till vänster om mittenlinjen. Denna typ av symmetri är ett enkelt sätt att få balans, men samtidigt hade man kunnat förvänta sig lite mer kreativ balans/assymetri från en konstnär, som en fotograf ju är.
+Bortsett från några få element med assymetrisk balans (***om man väljer en destination under travel i navigationen så kommer man till en sida där foton är presenterade i ett grid-linande format och där de trots olika bredd fyller hela vidden perfekt och med exakt samma mellanrum mellan rader eller kolumner***) så är Eriks webbplats väldigt symmetrisk, på gott och ont. Sidans titel, rubrik och navigation ligger i mitten. På första sidan tar bilden av Erik lika myckt plats som texten om honom och båda är placerade så att de ligger på var sin sidan på av och samma avstånd från sidans mitt, motsvarande gäller för Booking-sidan under rubriken Virtual Services. Även på de övriga sidorna är samtliga element antingen centrerade eller positionerade så att lika många/lika stora element är till höger som till vänster om mittenlinjen. Denna typ av symmetri är ett enkelt sätt att få balans, men samtidigt hade man kunnat förvänta sig lite mer kreativ balans/assymetri från en konstnär, som en fotograf ju är.
 
 ### Min egna portfoliosida
 
-De designteknikerna som kännetecknar min sida mest är grid, balance, colour, depth/perspective, repetition, unity.  
+De designprinciperna som kännetecknar min sida mest är grid, balance, colour, depth/perspective, repetition, unity.  
 
-Grid har jag använt mig av på home-sidan, landningssidorna för analysis respektive gallery samt för att presentera resultaten av analyserna Colors och Design Principles, samt även till headern på mindre enheter såsom mobiltelefon. I griden på home-sidan samt landningssidorna har jag placerat in element med snarlikt utseende och struktur så att de ligger på ett assymetriskt balanserat sätt och så att det också är tydligt att de hör ihop (unity). Tydligast syns det på homesidan där de tre boxarna har samma bild som "bakgrund" men olika delar av den visas. Det, tillsammans med placeringen och samma färg/typsnitt på text gör så att det tydligt syns att dessa tre boxar hör ihop.  
+Grid har jag använt mig av på home-sidan, landningssidorna för analysis respektive gallery samt för att presentera resultaten av analyserna Colors och Design Principles, samt även till headern på mindre enheter (upp till 767px bredd). I griden på home-sidan samt landningssidorna har jag placerat in element med snarlikt utseende och struktur så att de ligger på ett assymetriskt balanserat sätt och så att det också är tydligt att de hör ihop (unity). Tydligast syns det på homesidan där de tre boxarna har samma bild som "bakgrund" men olika delar av den visas. Det, tillsammans med placeringen och samma färg/typsnitt på text gör så att det tydligt syns att dessa tre boxar hör ihop.  
 
 Jag har försökt att skapa riktning (direction) på home sidan genom att ha border radius på tre av fyra hörn på de övre två rutorna för att på så sätt ge en illusion av att varje box pekar på nästa, samt att första boxen innehåller huvudrubrik h1, medan de efterföljade boxarna har underrubriker h2. Detta tillsammans med att ögat naturligt dras till övre vänstra hörnet först (iaf för oss som normalt sett läser från vänster till höger och uppifrån och ned) blir det så att besökaren börjar på "rätt" ruta, dvs den som är högst upp till vänster, därefter förflyttar blicken till rutan snett under till höger och sist till den som är snett under till vänster (i horisontella mitten av skärmen).
 
@@ -237,21 +240,25 @@ Efter att ha analyserat andra webbplatser kom jag också fram till att min webbp
 
 En annan sak som jag reflekterade kring var att i kursmomentet som vi arbetade med typsnitt så tyckte jag att kontrasten mellan rubriker och brödtext blev alldeles för stor och att det såg 'konstigt' ut, och höll därför "scale-faktorn" på min sida ganska låg. Jag använde mig också av motsvarande antal steg som rubriknivåer som jag använder - eftersom jag endast använder h1-h3 så blev det bara tre steg, dvs att det var en scale factor mellan p och h3 och inte scale factor * 3 som det hade blivit om jag även använt h4 och h5. Men efter att ha undersökt andras sidor på webben (både i detta men även i kmom04-05) så kom jag fram till att det vanliga på webben verkar vara just att ha "dramatiska" skillnader i storlek och att det faktiskt är en av sakerna som gör så att en webbplats ser bra ut, så jag funderade över om jag inte ändå skulle anpassa storleksskillnaderna efter fler steg trots att jag inte använder h4 och h5. När jag testade att göra så tyckte jag dock inte att det passade så bra in på min webbplats och med resten av layouten. Däremot så valde jag att öka på scale factor på större enheter från 1,414 till 1,618 - jag har reflekterat en del kring om denna ändring har lett till bättre eller sämre helhetsintryck, men känner att jag hade behövt mer tid. Just nu känns det som att det var bättre innan, men samtidigt kan det ha att göra med ovana. Det som jag också märkt av på andra webbplatser är att det inte är alltid h1 elementet som är störst och rubriker överlag inte alltid är större än brödtext, utan många gånger kan citat eller andra delar brödtext vara mycket större - storleken har snarare använts som kontrast för att tydligt visa vilka delar som är viktigast, vilket i mitt tycke faktiskt ser bättre och mer intressant ut än en strikt storleksordning baserad på de semantiska HTML elementen som använts.  
 
-Syftet med min portfoliosida var att lära mig och öva på olika tekniker och designprinciper så på det sättet tycker jag att sidans design förmedlar sitt syfte. 
+Syftet med min portfoliosida var att lära mig och öva på olika tekniker och designprinciper så på det sättet tycker jag att sidans design är i linje med webbplatsens syfte och mål. 
 
 
 ### Summerat
 
 Gemensamt för samtliga tre webbplatser förutom min egna var det sparsamma användandet av färger, vilket kan vara en fördel för bildtunga webbplatser. På samtliga tre användes även samma designprinciper på såväl första sidan som de övriga sidorna. Detsamma gäller även min egna portfoliosida om man bortser från den lilla hinten till "direction" med hjälp av hörnen på rutorna.  
 
-Ingen av webbplatserna använde en lika tydlig "composition" såsom i exemplet i Design Element Principles, men däremot så var balans och kontrast två designprinciper som fanns närvarande på samtliga webbplatser och det fanns också en tydlig heriarki som gjort det enkelt att följa sidornas innehåll i den prioritetsordning som sidskaparen bestämt. Samtliga webbplatser använde sig också av grid för att presentera innehåll (Erik använde sig inte av CSS grid, men han har på annat sätt skapat grid-liknande format). Ingen av webbplatserna använde randomness/variety och ingen bröt heller på ett tydligt sätt mot några regler (utöver regeln kring samma scalefactor mellan olika text-nivåer som såväl Devon som Rafikah bröt mot för att skapa kontrast och framhäva "viktiga" delar på ett sätt som gynnade hemsidan). Ingen av webbplatserna använde heller negative space till något kreativt. Webbplatserna som inte hade som primärt syfte att presentera foton använde sig av hero-bilder för att bl a skapa rörelse, djup och perspektiv på webbplatsen. 
+Ingen av webbplatserna använde en lika tydlig "composition" såsom i exemplet i Design Element Principles men Devons webbplats hade en mycket bra helhetskänsla. Balans och kontrast var två designprinciper som fanns närvarande på samtliga webbplatser och det fanns också en tydlig heriarki som gjort det enkelt att följa sidornas innehåll i den prioritetsordning som sidskaparen bestämt. Samtliga webbplatser använde sig också av grid för att presentera innehåll (Erik använde sig inte av CSS grid, men han har på annat sätt skapat grid-liknande format). Ingen av webbplatserna använde randomness/variety och ingen bröt heller på ett tydligt sätt mot några regler (***utöver regeln kring samma scalefactor mellan olika text-nivåer som såväl Devon som Rafikah bröt mot för att skapa kontrast och framhäva "viktiga" delar på ett sätt som gynnade hemsidan***). Ingen av webbplatserna använde heller negative space till något kreativt. Webbplatserna som inte hade som primärt syfte att presentera foton använde sig av hero-bilder för att bl a skapa rörelse, djup och perspektiv på webbplatsen. 
 
 Referenser
 -----------------------
 
 
-1. https://dbwebb.se/article/vl.pdf (besökt 2022-12-11)
-2. https://www.canva.com/learn/design-elements-principles (besökt 2022-12-11)
+1. https://dbwebb.se/article/vl.pdf (besökt 2022-12-10)
+2. https://www.canva.com/learn/design-elements-principles (besökt 2022-12-10)
+3. https://devonstank.com/ (besökt 2022-12-10)
+4. https://www.rafikahhalim.com/ (besökt 2022-12-10)
+5. https://www.erikjaworski.me (besökt 2022-12-10)
+6. https://www.student.bth.se/~juli22/dbwebb-kurser/design/me/portfolio/ (besökt 2022-12-11)
 
 
 Övrigt
